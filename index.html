@@ -11,13 +11,19 @@
     <div id="title">
         <h1>Etch and Sketch</h1>
     </div>
+    <div class="mode">Mode: Coloring</div>
     <div id="buttons">
-        <button id="Reset">Reset</button>
+        <button id="Reset" onclick="reset()">Reset</button>
         <button onclick="changeColor('black')">Black</button>
         <button onclick="changeColor('white')">Eraser</button>
         <button onclick="changeColor('gray')">Gray</button>
+        <button onclick="changeColor('random')">Random</button>
         
-        <input type="number" name="Size" id="gridSize" value="16" min="2" max="100" onchange="changeSize(this.value)">
+        
+    </div>
+    <div>
+        <input type="text" placeholder="Board size" name="Size" id="gridSize" value="16" onchange="changeSize(this.value)">
+        <button>Set Size</button>
     </div>
     <div id="container"></div>
     <script src="script.js"></script>
