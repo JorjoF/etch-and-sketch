@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Etch and Sketch</h1>
+    </div>
+    <div id="buttons">
+        <button id="Reset">Reset</button>
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="changeColor('gray')">Gray</button>
+        
+        <input type="number" name="Size" id="gridSize" value="16" min="2" max="100" onchange="changeSize(this.value)">
+    </div>
+    <div id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
